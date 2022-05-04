@@ -1,0 +1,211 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="AssignmentOrReturnOfFieldWithMutableType" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="AssignmentToCollectionFieldFromParameter" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignorePrivateMethods" value="true" />
+    </inspection_tool>
+    <inspection_tool class="AssignmentToMethodParameter" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoreTransformationOfOriginalParameter" value="false" />
+    </inspection_tool>
+    <inspection_tool class="AssignmentToStaticFieldFromInstanceMethod" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="AssignmentToSuperclassField" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="BeforeClassOrAfterClassIsPublicStaticVoidNoArg" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="BeforeOrAfterIsPublicVoidNoArg" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="BooleanParameter" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="CastToConcreteClass" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="DeclareCollectionAsInterface" enabled="false" level="WARNING" enabled_by_default="false">
+      <option name="ignoreLocalVariables" value="true" />
+      <option name="ignorePrivateMethodsAndFields" value="true" />
+    </inspection_tool>
+    <inspection_tool class="EqualsCalledOnEnumConstant" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="InstanceofChain" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoreInstanceofOnLibraryClasses" value="false" />
+    </inspection_tool>
+    <inspection_tool class="InstanceofInterfaces" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoreAbstractClasses" value="true" />
+    </inspection_tool>
+    <inspection_tool class="InstanceofThis" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="InterfaceMayBeAnnotatedFunctional" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="JUnit4MethodNamingConvention" enabled="true" level="ERROR" enabled_by_default="true">
+      <option name="m_regex" value="should[A-Za-z_\d]*" />
+      <option name="m_minLength" value="0" />
+      <option name="m_maxLength" value="0" />
+    </inspection_tool>
+    <inspection_tool class="JUnitDatapoint" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="JUnitRule" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="JUnitTestClassNamingConvention" enabled="true" level="ERROR" enabled_by_default="true">
+      <option name="m_regex" value="[A-Z][A-Za-z\d]*Tests" />
+      <option name="m_minLength" value="0" />
+      <option name="m_maxLength" value="0" />
+    </inspection_tool>
+    <inspection_tool class="JavaDoc" enabled="true" level="WARNING" enabled_by_default="true">
+      <scope name="Tests" level="WARNING" enabled="false">
+        <option name="TOP_LEVEL_CLASS_OPTIONS">
+          <value>
+            <option name="ACCESS_JAVADOC_REQUIRED_FOR" value="none" />
+            <option name="REQUIRED_TAGS" value="" />
+          </value>
+        </option>
+        <option name="INNER_CLASS_OPTIONS">
+          <value>
+            <option name="ACCESS_JAVADOC_REQUIRED_FOR" value="none" />
+            <option name="REQUIRED_TAGS" value="" />
+          </value>
+        </option>
+        <option name="METHOD_OPTIONS">
+          <value>
+            <option name="ACCESS_JAVADOC_REQUIRED_FOR" value="none" />
+            <option name="REQUIRED_TAGS" value="@return@param@throws or @exception" />
+          </value>
+        </option>
+        <option name="FIELD_OPTIONS">
+          <value>
+            <option name="ACCESS_JAVADOC_REQUIRED_FOR" value="none" />
+            <option name="REQUIRED_TAGS" value="" />
+          </value>
+        </option>
+        <option name="IGNORE_DEPRECATED" value="false" />
+        <option name="IGNORE_JAVADOC_PERIOD" value="true" />
+        <option name="IGNORE_DUPLICATED_THROWS" value="false" />
+        <option name="IGNORE_POINT_TO_ITSELF" value="false" />
+        <option name="myAdditionalJavadocTags" value="" />
+      </scope>
+      <option name="TOP_LEVEL_CLASS_OPTIONS">
+        <value>
+          <option name="ACCESS_JAVADOC_REQUIRED_FOR" value="public" />
+          <option name="REQUIRED_TAGS" value="" />
+        </value>
+      </option>
+      <option name="INNER_CLASS_OPTIONS">
+        <value>
+          <option name="ACCESS_JAVADOC_REQUIRED_FOR" value="none" />
+          <option name="REQUIRED_TAGS" value="" />
+        </value>
+      </option>
+      <option name="METHOD_OPTIONS">
+        <value>
+          <option name="ACCESS_JAVADOC_REQUIRED_FOR" value="protected" />
+          <option name="REQUIRED_TAGS" value="@return@param@throws or @exception" />
+        </value>
+      </option>
+      <option name="FIELD_OPTIONS">
+        <value>
+          <option name="ACCESS_JAVADOC_REQUIRED_FOR" value="none" />
+          <option name="REQUIRED_TAGS" value="" />
+        </value>
+      </option>
+      <option name="IGNORE_DEPRECATED" value="false" />
+      <option name="IGNORE_JAVADOC_PERIOD" value="true" />
+      <option name="IGNORE_DUPLICATED_THROWS" value="false" />
+      <option name="IGNORE_POINT_TO_ITSELF" value="false" />
+      <option name="myAdditionalJavadocTags" value="" />
+      <IGNORE_ACCESSORS value="true" />
+    </inspection_tool>
+    <inspection_tool class="JavadocDeclaration" enabled="true" level="WARNING" enabled_by_default="true">
+      <scope name="Tests" level="WARNING" enabled="false" />
+    </inspection_tool>
+    <inspection_tool class="LoggerInitializedWithForeignClass" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="loggerClassName" value="org.apache.log4j.Logger,org.slf4j.LoggerFactory,org.apache.commons.logging.LogFactory,java.util.logging.Logger" />
+      <option name="loggerFactoryMethodName" value="getLogger,getLogger,getLog,getLogger" />
+    </inspection_tool>
+    <inspection_tool class="MagicNumber" enabled="true" level="WARNING" enabled_by_default="true">
+      <scope name="Tests" level="WARNING" enabled="false" />
+    </inspection_tool>
+    <inspection_tool class="MigrateAssertToMatcherAssert" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="MissingJavadoc" enabled="true" level="WARNING" enabled_by_default="true">
+      <scope name="Tests" level="WARNING" enabled="false">
+        <option name="PACKAGE_SETTINGS">
+          <Options>
+            <option name="ENABLED" value="false" />
+          </Options>
+        </option>
+        <option name="MODULE_SETTINGS">
+          <Options>
+            <option name="ENABLED" value="false" />
+          </Options>
+        </option>
+        <option name="TOP_LEVEL_CLASS_SETTINGS">
+          <Options>
+            <option name="ENABLED" value="false" />
+          </Options>
+        </option>
+        <option name="INNER_CLASS_SETTINGS">
+          <Options>
+            <option name="ENABLED" value="false" />
+          </Options>
+        </option>
+        <option name="METHOD_SETTINGS">
+          <Options>
+            <option name="REQUIRED_TAGS" value="@return@param@throws or @exception" />
+            <option name="ENABLED" value="false" />
+          </Options>
+        </option>
+        <option name="FIELD_SETTINGS">
+          <Options>
+            <option name="ENABLED" value="false" />
+          </Options>
+        </option>
+      </scope>
+      <option name="IGNORE_ACCESSORS" value="true" />
+      <option name="PACKAGE_SETTINGS">
+        <Options>
+          <option name="ENABLED" value="false" />
+        </Options>
+      </option>
+      <option name="MODULE_SETTINGS">
+        <Options>
+          <option name="ENABLED" value="false" />
+        </Options>
+      </option>
+      <option name="TOP_LEVEL_CLASS_SETTINGS">
+        <Options />
+      </option>
+      <option name="INNER_CLASS_SETTINGS">
+        <Options>
+          <option name="ENABLED" value="false" />
+        </Options>
+      </option>
+      <option name="METHOD_SETTINGS">
+        <Options>
+          <option name="MINIMAL_VISIBILITY" value="protected" />
+          <option name="REQUIRED_TAGS" value="@return@param@throws or @exception" />
+        </Options>
+      </option>
+      <option name="FIELD_SETTINGS">
+        <Options>
+          <option name="ENABLED" value="false" />
+        </Options>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="MultipleTopLevelClassesInFile" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="NonStaticFinalLogger" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="loggerClassName" value="" />
+    </inspection_tool>
+    <inspection_tool class="OverlyStrongTypeCast" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoreInMatchingInstanceof" value="true" />
+    </inspection_tool>
+    <inspection_tool class="RedundantFieldInitialization" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="SimplifiableEqualsExpression" enabled="true" level="INFORMATION" enabled_by_default="true" />
+    <inspection_tool class="SizeReplaceableByIsEmpty" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="TypeMayBeWeakened" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="useRighthandTypeAsWeakestTypeInAssignments" value="true" />
+      <option name="useParameterizedTypeForCollectionMethods" value="true" />
+      <option name="doNotWeakenToJavaLangObject" value="true" />
+      <option name="onlyWeakentoInterface" value="true" />
+    </inspection_tool>
+    <inspection_tool class="UnnecessaryConstructor" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoreAnnotations" value="true" />
+    </inspection_tool>
+    <inspection_tool class="UtilityClass" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <scope name="Tests" level="WEAK WARNING" enabled="false">
+        <option name="ignorableAnnotations">
+          <value />
+        </option>
+      </scope>
+      <option name="ignorableAnnotations">
+        <value />
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
