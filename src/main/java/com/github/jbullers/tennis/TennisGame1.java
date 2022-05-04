@@ -2,8 +2,8 @@ package com.github.jbullers.tennis;
 
 public class TennisGame1 implements TennisGame {
 
-    private int m_score1 = 0;
-    private int m_score2 = 0;
+    private int serverScore;
+    private int receiverScore;
     private final String serverName;
     private final String receiverName;
 
@@ -14,59 +14,37 @@ public class TennisGame1 implements TennisGame {
 
     public void wonPoint(String playerName) {
         if (playerName.equalsIgnoreCase(serverName))
-            m_score1 += 1;
+            serverScore += 1;
         else
-            m_score2 += 1;
+            receiverScore += 1;
     }
 
     public String getScore() {
-        String score = "";
-        int tempScore = 0;
-        if (m_score1 == m_score2) {
-            switch (m_score1) {
-                case 0:
-                    score = "Love-All";
-                    break;
-                case 1:
-                    score = "Fifteen-All";
-                    break;
-                case 2:
-                    score = "Thirty-All";
-                    break;
-                default:
-                    score = "Deuce";
-                    break;
-
-            }
-        } else if (m_score1 >= 4 || m_score2 >= 4) {
-            int minusResult = m_score1 - m_score2;
-            if (minusResult == 1) score = "Advantage " + serverName;
-            else if (minusResult == -1) score = "Advantage " + receiverName;
-            else if (minusResult >= 2) score = "Win for " + serverName;
-            else score = "Win for " + receiverName;
+        if (serverScore == receiverScore) {
+            return switch (serverScore) {
+                case 0 -> "Love-All";
+                case 1 -> "Fifteen-All";
+                case 2 -> "Thirty-All";
+                default -> "Deuce";
+            };
+        } else if (serverScore >= 4 || receiverScore >= 4) {
+            int minusResult = serverScore - receiverScore;
+            if (minusResult == 1) return "Advantage " + serverName;
+            else if (minusResult == -1) return "Advantage " + receiverName;
+            else if (minusResult >= 2) return "Win for " + serverName;
+            else return "Win for " + receiverName;
         } else {
-            for (int i = 1; i < 3; i++) {
-                if (i == 1) tempScore = m_score1;
-                else {
-                    score += "-";
-                    tempScore = m_score2;
-                }
-                switch (tempScore) {
-                    case 0:
-                        score += "Love";
-                        break;
-                    case 1:
-                        score += "Fifteen";
-                        break;
-                    case 2:
-                        score += "Thirty";
-                        break;
-                    case 3:
-                        score += "Forty";
-                        break;
-                }
-            }
+            return callForScore(serverScore) + "-" + callForScore(receiverScore);
         }
-        return score;
+    }
+
+    private static String callForScore(int score) {
+        return switch (score) {
+            case 0 -> "Love";
+            case 1 -> "Fifteen";
+            case 2 -> "Thirty";
+            case 3 -> "Forty";
+            default -> throw new IllegalArgumentException("Expected score of 0-3 inclusive");
+        };
     }
 }
